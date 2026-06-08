@@ -54,11 +54,11 @@ let filmes = [
         paisOrigem: "EUA",
     }
 ];
-app.get("/", ( res) => {
+app.get("/", (req, res) => {
     res.send("funciona");
 });
 
-app.get("/filmes", ( res) => {
+app.get("/filmes", (req, res) => {
     res.json(filmes);
 });
 
